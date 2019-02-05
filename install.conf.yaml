@@ -8,8 +8,12 @@
     ~/.gitignore_local: gitignore_local
     ~/.ssh/config: ssh/config
     ~/.zshrc: zshrc
+    ~/.zsh_aliases: zsh_aliases
+    ~/.zsh_exports: zsh_exports
+    ~/.zsh_plugins.txt: zsh_plugins.txt
     ~/.gnupg/gpg.conf: gnupg/gpg.conf
     ~/.gnupg/gpg-agent.conf: gnupg/gpg-agent.conf
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+  - [antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh, Refreshing Antibody plugin list]
