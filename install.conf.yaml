@@ -5,8 +5,11 @@
 - clean: ['~']
 
 - link:
+    ~/.gitignore_local: gitignore_local
     ~/.ssh/config: ssh/config
     ~/.zshrc: zshrc
+    ~/.gnupg/gpg.conf: gnupg/gpg.conf
+    ~/.gnupg/gpg-agent.conf: gnupg/gpg-agent.conf
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
