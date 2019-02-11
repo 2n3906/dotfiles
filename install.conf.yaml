@@ -13,6 +13,7 @@
     ~/.zsh_plugins.txt: zsh_plugins.txt
     ~/.gnupg/gpg.conf: gnupg/gpg.conf
     ~/.gnupg/gpg-agent.conf: gnupg/gpg-agent.conf
+    ~/.matplotlib/stylelib/scottoplot.mplstyle: matplotlib/stylelib/scottoplot.mplstyle
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
