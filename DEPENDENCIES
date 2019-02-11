@@ -1,0 +1,2 @@
+homebrew package "antibody"
+unixorn/warhol.plugin.zsh requires homebrew package "grc"

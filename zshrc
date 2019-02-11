@@ -20,6 +20,10 @@ gpgconf --launch gpg-agent
 
 setopt noclobber
 
+# Use up/down arrows to search through history
+bindkey "^[[A" history-beginning-search-backward
+bindkey "^[[B" history-beginning-search-forward
+
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
