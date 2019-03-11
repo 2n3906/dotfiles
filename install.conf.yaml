@@ -20,3 +20,4 @@
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - [antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh, Refreshing Antibody plugin list]
+  - [chmod 600 ssh/config]
