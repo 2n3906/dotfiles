@@ -18,7 +18,7 @@ lab () {
         toilet -f mono9 -F gay Jupyter Lab
 
         # Extract the Jupyter token (needed for authentication)
-        TOKEN=$(jupyter notebook list | tail -n1 | python -c "import sys; print(next(sys.stdin)[29:77], end='')")
+        TOKEN=$(jupyter notebook list | tail -n1 | python3 -c "import sys; print(next(sys.stdin)[29:77], end='')")
 
         # Let the user know what's going on
         echo -n $TOKEN | pbcopy
@@ -50,7 +50,7 @@ notebook () {
         toilet -f mono9 -F gay "Notebook"
 
         # Extract the Jupyter token (needed for authentication)
-        TOKEN=$(jupyter notebook list | tail -n1 | python -c "import sys; print(next(sys.stdin)[29:77], end='')")
+        TOKEN=$(jupyter notebook list | tail -n1 | python3 -c "import sys; print(next(sys.stdin)[29:77], end='')")
 
         # Let the user know what's going on
         echo -n $TOKEN | pbcopy

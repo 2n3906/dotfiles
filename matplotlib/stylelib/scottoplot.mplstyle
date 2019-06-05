@@ -13,6 +13,10 @@ patch.antialiased: True
 
 font.size: 10.0
 font.sans-serif: Source Sans Pro
+# necessary to make good PDF output
+# see http://phyletica.org/matplotlib-fonts/
+pdf.fonttype : 42
+ps.fonttype : 42
 
 axes.titlesize: 20.0
 axes.titleweight: bold

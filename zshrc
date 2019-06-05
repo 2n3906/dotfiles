@@ -36,3 +36,6 @@ fi
 source $HOME/.apikeys
 source $HOME/.zsh_exports
 source $HOME/.zsh_aliases
+source $HOME/.zsh_jupyter
+
+export DYLD_FALLBACK_LIBRARY_PATH="/Applications/PicoScope 6.app/Contents/Resources/lib"
