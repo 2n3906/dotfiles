@@ -8,7 +8,7 @@ POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs)
 
-export PATH="/Users/johnston/bin:/usr/local/bin:/Applications/Postgres.app/Contents/Versions/latest/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/X11/bin:/usr/local/texlive/2017basic/bin/x86_64-darwin:$HOME/adb-fastboot/platform-tools"
+export PATH="/Users/johnston/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # GPG 2.1.x SSH support
@@ -37,5 +37,3 @@ source $HOME/.apikeys
 source $HOME/.zsh_exports
 source $HOME/.zsh_aliases
 source $HOME/.zsh_jupyter
-
-export DYLD_FALLBACK_LIBRARY_PATH="/Applications/PicoScope 6.app/Contents/Resources/lib"
