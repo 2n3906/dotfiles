@@ -7,6 +7,7 @@ source ~/.zsh_plugins.sh
 POWERLEVEL9K_MODE='nerdfont-complete'
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs)
+DEFAULT_USER=$USER # suppress pl9k user display normally
 
 export PATH="/Users/johnston/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
@@ -14,6 +15,7 @@ export PATH="/Users/johnston/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # GPG 2.1.x SSH support
 # See : http://incenp.org/notes/2015/gnupg-for-ssh-authentication.html
 # also https://evilmartians.com/chronicles/stick-with-security-yubikey-ssh-gnupg-macos
+export GPG_TTY=$(/usr/bin/tty)
 export SSH_AUTH_SOCK=$HOME/.gnupg/S.gpg-agent.ssh
 gpgconf --launch gpg-agent
 # consider sleepwatcher
