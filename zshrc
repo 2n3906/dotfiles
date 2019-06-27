@@ -9,7 +9,7 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs)
 DEFAULT_USER=$USER # suppress pl9k user display normally
 
-export PATH="/Users/johnston/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+export PATH="/Users/johnston/bin:/usr/local/miniconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # GPG 2.1.x SSH support
@@ -39,3 +39,19 @@ source $HOME/.apikeys
 source $HOME/.zsh_exports
 source $HOME/.zsh_aliases
 source $HOME/.zsh_jupyter
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/usr/local/miniconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/usr/local/miniconda3/etc/profile.d/conda.sh" ]; then
+        . "/usr/local/miniconda3/etc/profile.d/conda.sh"
+    else
+        export PATH="/usr/local/miniconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+

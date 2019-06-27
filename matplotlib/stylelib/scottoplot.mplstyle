@@ -11,8 +11,11 @@ patch.facecolor: 348ABD  # blue
 patch.edgecolor: EEEEEE
 patch.antialiased: True
 
-font.size: 10.0
-font.sans-serif: Source Sans Pro
+font.size: 16.0
+# font.sans-serif: Source Sans Pro
+font.family: sans-serif
+font.sans-serif: Futura
+font.serif: Source Serif Pro
 # necessary to make good PDF output
 # see http://phyletica.org/matplotlib-fonts/
 pdf.fonttype : 42
@@ -50,10 +53,17 @@ grid.linestyle: -    # solid line
 
 figure.facecolor: white
 figure.edgecolor: 0.50
+
+# Get images of exactly 1600 x 900 pixels output
 figure.figsize: 16, 9
-# for simple scaling:
+figure.constrained_layout.use: True
+figure.constrained_layout.w_pad: 0
+figure.constrained_layout.h_pad: 0
 figure.dpi: 100
 savefig.dpi: 100
+savefig.pad_inches: 0
+savefig.edgecolor: 0.5
+savefig.transparent: True
 
 # speed-up
 path.simplify: True

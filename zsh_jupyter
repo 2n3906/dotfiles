@@ -1,3 +1,4 @@
+# setup instructions are here: https://github.com/stevenschmatz/jupyter-native
 
 jupyter_shutdown() {
         ps -ef | grep "[j]upyter" | sed -n 1p | for line in * ; do awk '{system("kill "$2)}' ; done
