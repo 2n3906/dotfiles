@@ -11,17 +11,18 @@ patch.facecolor: 348ABD  # blue
 patch.edgecolor: EEEEEE
 patch.antialiased: True
 
-font.size: 16.0
+font.size: 18.0
 # font.sans-serif: Source Sans Pro
 font.family: sans-serif
-font.sans-serif: Futura
+font.sans-serif: Futura, Metallophile Sp8
 font.serif: Source Serif Pro
 # necessary to make good PDF output
 # see http://phyletica.org/matplotlib-fonts/
 pdf.fonttype : 42
 ps.fonttype : 42
 
-axes.titlesize: 20.0
+axes.titlesize: 24.0
+axes.titlepad: 10.0     # padding below title
 axes.titleweight: bold
 
 axes.facecolor: E5E5E5
@@ -41,6 +42,8 @@ axes.prop_cycle: cycler('color', ['E24A33', '348ABD', '988ED5', '777777', 'FBC15
                    # FBC15E : yellow
                    # 8EBA42 : green
                    # FFB5B8 : pink
+
+lines.linewidth: 2.0
 
 xtick.color: 555555
 xtick.direction: out
