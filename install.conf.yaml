@@ -7,6 +7,7 @@
 - link:
     ~/.gitignore_local: gitignore_local
     ~/.ssh/config: ssh/config
+    ~/.profile: profile
     ~/.zshrc: zshrc
     ~/.zsh_aliases: zsh_aliases
     ~/.zsh_exports: zsh_exports
