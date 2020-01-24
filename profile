@@ -27,5 +27,6 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 
 # Hi-DPI display settings
-export GDK_DPI_SCALE=1.5
-export QT_SCALE_FACTOR=1.5
+export GDK_DPI_SCALE=1.5       # Firefox
+export QT_SCALE_FACTOR=1.5     # QT apps
+export WINIT_HIDPI_FACTOR=1.5  # Alacritty
