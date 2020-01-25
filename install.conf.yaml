@@ -25,3 +25,21 @@
   - [git submodule update --init --recursive, Installing submodules]
   - [antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh, Refreshing Antibody plugin list]
   - [chmod 600 ssh/config]
+
+- vscode:
+    ms-vscode.cpptools:
+      status: install
+    ms-python.python:
+      status: install
+    budparr.language-hugo-vscode:
+      status: install
+    mechatroner.rainbow-csv:
+      status: install
+    njpwerner.autodocstring:
+      status: install
+    redhat.vscode-yaml:
+      status: install
+    sibiraj-s.vscode-scss-formatter:
+      status: install
+    stkb.rewrap:
+      status: install
