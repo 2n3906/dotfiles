@@ -6,6 +6,7 @@
 - clean: ['~']
 
 - link:
+    ~/.editorconfig: editorconfig
     ~/.gitignore_local: gitignore_local
     ~/.ssh/config: ssh/config
     ~/.profile: profile
@@ -32,6 +33,8 @@
     ms-python.python:
       status: install
     budparr.language-hugo-vscode:
+      status: install
+    EditorConfig.EditorConfig:
       status: install
     mechatroner.rainbow-csv:
       status: install
