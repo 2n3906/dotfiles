@@ -1,0 +1,7 @@
+In order for gpg-agent to work with ssh, it may be necessary to run
+
+`echo UPDATESTARTUPTTY | gpg-connect-agent`
+
+Then add local ssh keys to ~/.gnupg/sshcontrol with `ssh-add`
+
+No idea.

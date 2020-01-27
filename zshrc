@@ -16,7 +16,8 @@ export PATH="/Users/johnston/bin:/usr/local/miniconda3/bin:/usr/local/bin:/usr/b
 # See : http://incenp.org/notes/2015/gnupg-for-ssh-authentication.html
 # also https://evilmartians.com/chronicles/stick-with-security-yubikey-ssh-gnupg-macos
 export GPG_TTY=$(/usr/bin/tty)
-export SSH_AUTH_SOCK=$HOME/.gnupg/S.gpg-agent.ssh
+#export SSH_AUTH_SOCK=$HOME/.gnupg/S.gpg-agent.ssh
+export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 gpgconf --launch gpg-agent
 # consider sleepwatcher
 
