@@ -9,7 +9,7 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs)
 DEFAULT_USER=$USER # suppress pl9k user display normally
 
-export PATH="/Users/johnston/bin:/usr/local/miniconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
+#export PATH="/Users/johnston/bin:/usr/local/miniconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin"
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # GPG 2.1.x SSH support

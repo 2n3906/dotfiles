@@ -16,12 +16,21 @@
     ~/.zsh_jupyter: zsh_jupyter
     ~/.zsh_plugins.txt: zsh_plugins.txt
     ~/.gnupg/gpg.conf: gnupg/gpg.conf
-    ~/.gnupg/gpg-agent.conf: gnupg/gpg-agent.conf
     ~/.config/alacritty/alacritty.yml: config/alacritty/alacritty.yml
     ~/.config/Code/User/settings.json: config/Code/User/settings.json
     ~/.jupyter/jupyter_notebook_config.py: jupyter/jupyter_notebook_config.py
     ~/.matplotlib/matplotlibrc: matplotlib/matplotlibrc
     ~/.matplotlib/stylelib/scottoplot.mplstyle: matplotlib/stylelib/scottoplot.mplstyle
+
+- link:
+    ~/.gnupg/gpg-agent.conf:
+      if: '[ `uname` = Linux ]'
+      path: gnupg/gpg-agent.conf.linux
+
+- link:
+    ~/.gnupg/gpg-agent.conf:
+      if: '[ `uname` = Darwin ]'
+      path: gnupg/gpg-agent.conf.mac
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
