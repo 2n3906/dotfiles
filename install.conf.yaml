@@ -10,6 +10,8 @@
     ~/.gitignore_local: gitignore_local
     ~/.ssh/config: ssh/config
     ~/.profile: profile
+    ~/.tmux.conf: tmux.conf
+    ~/.tmux/tmuxline.conf: tmux/tmuxline.conf
     ~/.vimrc: vimrc
     ~/.zshrc: zshrc
     ~/.zsh_aliases: zsh_aliases

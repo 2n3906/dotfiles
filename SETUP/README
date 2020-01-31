@@ -9,3 +9,4 @@ https://github.com/Disassembler0/Win10-Initial-Setup-Script
 
 Linux:
  * Install lightline for vim: git clone https://github.com/itchyny/lightline.vim ~/.vim/pack/plugins/start/lightline
+ * Install tmuxline for vim: git clone https://github.com/edkolev/tmuxline.vim ~/.vim/pack/plugins/start/tmuxline.vim
