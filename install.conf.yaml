@@ -10,6 +10,7 @@
     ~/.gitignore_local: gitignore_local
     ~/.ssh/config: ssh/config
     ~/.profile: profile
+    ~/.vimrc: vimrc
     ~/.zshrc: zshrc
     ~/.zsh_aliases: zsh_aliases
     ~/.zsh_exports: zsh_exports

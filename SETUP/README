@@ -6,3 +6,6 @@ https://github.com/herrbischoff/awesome-macos-command-line
 
 Windows:
 https://github.com/Disassembler0/Win10-Initial-Setup-Script
+
+Linux:
+ * Install lightline for vim: git clone https://github.com/itchyny/lightline.vim ~/.vim/pack/plugins/start/lightline
