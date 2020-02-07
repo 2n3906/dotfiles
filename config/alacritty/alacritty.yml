@@ -581,3 +581,8 @@ font:
   #- { key: PageDown,  mods: Shift,   action: ScrollPageDown, mode: ~Alt       }
   #- { key: Home,      mods: Shift,   action: ScrollToTop,    mode: ~Alt       }
   #- { key: End,       mods: Shift,   action: ScrollToBottom, mode: ~Alt       }
+# this is a temporary work-around for garbage keystrokes when
+# switching workspaces in GNOME. Should eventually get fixed.
+key_bindings:
+  - { key: Up, mods: Control|Alt, action: None }
+  - { key: Down, mods: Control|Alt, action: None }
