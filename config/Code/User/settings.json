@@ -2,5 +2,6 @@
     "window.zoomLevel": 1.25,
     "editor.fontFamily": "FuraCode Nerd Font",
     "editor.fontLigatures": true,
-    "python.formatting.provider": "yapf"
+    "python.formatting.provider": "yapf",
+    "autoDocstring.docstringFormat": "sphinx"
 }
