@@ -30,3 +30,7 @@ fi
 export GDK_DPI_SCALE=1.5       # Firefox
 export QT_SCALE_FACTOR=1.5     # QT apps
 export WINIT_HIDPI_FACTOR=1.5  # Alacritty
+
+export PATH="$HOME/.cargo/bin:$PATH"
+
+export PATH="$HOME/.poetry/bin:$PATH"
