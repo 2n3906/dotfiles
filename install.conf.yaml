@@ -24,6 +24,8 @@
     ~/.jupyter/jupyter_notebook_config.py: jupyter/jupyter_notebook_config.py
     ~/.matplotlib/matplotlibrc: matplotlib/matplotlibrc
     ~/.matplotlib/stylelib/scottoplot.mplstyle: matplotlib/stylelib/scottoplot.mplstyle
+    ~/.config/filmtagger/cameras.toml: config/filmtagger/cameras.toml
+    ~/.config/filmtagger/films.toml: config/filmtagger/films.toml
 
 - link:
     ~/.gnupg/gpg-agent.conf:
