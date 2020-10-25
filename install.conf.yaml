@@ -26,6 +26,8 @@
     ~/.matplotlib/stylelib/scottoplot.mplstyle: matplotlib/stylelib/scottoplot.mplstyle
     ~/.config/filmtagger/cameras.toml: config/filmtagger/cameras.toml
     ~/.config/filmtagger/films.toml: config/filmtagger/films.toml
+    ~/.config/environment.d/envvars.conf: config/environment.d/envvars.conf
+
 
 - link:
     ~/.gnupg/gpg-agent.conf:
