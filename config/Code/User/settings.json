@@ -3,5 +3,6 @@
     "editor.fontFamily": "FiraCode Nerd Font",
     "editor.fontLigatures": true,
     "python.formatting.provider": "yapf",
-    "autoDocstring.docstringFormat": "sphinx"
+    "autoDocstring.docstringFormat": "sphinx",
+    "extensions.ignoreRecommendations": false
 }
