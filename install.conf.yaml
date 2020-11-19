@@ -22,8 +22,8 @@
     ~/.config/alacritty/alacritty.yml: config/alacritty/alacritty.yml
     ~/.config/Code/User/settings.json: config/Code/User/settings.json
     ~/.jupyter/jupyter_notebook_config.py: jupyter/jupyter_notebook_config.py
-    ~/.matplotlib/matplotlibrc: matplotlib/matplotlibrc
-    ~/.matplotlib/stylelib/scottoplot.mplstyle: matplotlib/stylelib/scottoplot.mplstyle
+    ~/.config/matplotlib/matplotlibrc: config/matplotlib/matplotlibrc
+    ~/.config/matplotlib/stylelib/scottoplot.mplstyle: config/matplotlib/stylelib/scottoplot.mplstyle
     ~/.config/filmtagger/cameras.toml: config/filmtagger/cameras.toml
     ~/.config/filmtagger/films.toml: config/filmtagger/films.toml
     ~/.config/environment.d/envvars.conf: config/environment.d/envvars.conf
