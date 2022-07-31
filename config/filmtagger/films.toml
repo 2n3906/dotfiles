@@ -72,3 +72,8 @@
 "Exif.Photo.ISOSpeedRatings" = 100
 "Xmp.AnalogExif.FilmMaker" = "Fuji"
 "Xmp.iptcExt.DigitalSourceType" = "http://cv.iptc.org/newscodes/digitalsourcetype/positiveFilm"
+
+["CineStill 800T"]
+"Exif.Photo.ISOSpeedRatings" = 800
+"Xmp.AnalogExif.FilmMaker" = "CineStill"
+"Xmp.iptcExt.DigitalSourceType" = "http://cv.iptc.org/newscodes/digitalsourcetype/negativeFilm"
