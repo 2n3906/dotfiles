@@ -11,6 +11,8 @@ Dotfiles uses [Dotbot][dotbot] for installation.
 
 ## Mac installation
 
- * Install homebrew
- * Install homebrew casks
+ * Go to Settings > Keyboard > Modifier Keys and set Caps Lock to Command
+ * Install xcode command-line tools: `xcode-select --install`
+ * Install Homebrew: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
+ * Install Homebrew casks
  * iTerm2 > Preferences > Profiles > Text and select font "MesloLGS NF"
