@@ -17,6 +17,7 @@
     ~/.zshrc: zshrc
     ~/.zsh_aliases: zsh_aliases
     ~/.zsh_exports: zsh_exports
+    ~/.p10k.zsh: p10k.zsh
     ~/.gnupg/gpg.conf: gnupg/gpg.conf
     ~/.config/alacritty/alacritty.yml: config/alacritty/alacritty.yml
     ~/.config/Code/User/settings.json: config/Code/User/settings.json
@@ -43,5 +44,4 @@
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - [antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh, Refreshing Antibody plugin list]
   - [chmod 600 ssh/config]

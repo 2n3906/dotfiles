@@ -8,3 +8,9 @@ multiple times.
 Dotfiles uses [Dotbot][dotbot] for installation.
 
 [dotbot]: https://github.com/anishathalye/dotbot
+
+## Mac installation
+
+ * Install homebrew
+ * Install homebrew casks
+ * iTerm2 > Preferences > Profiles > Text and select font "MesloLGS NF"
