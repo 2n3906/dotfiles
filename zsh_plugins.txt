@@ -1,8 +1,0 @@
-# After updating, run:
-#   antibody bundle < ~/.zsh_plugins.txt > ~/.zsh_plugins.sh
-zsh-users/zsh-completions
-zsh-users/zsh-autosuggestions
-unixorn/warhol.plugin.zsh
-zsh-users/zsh-syntax-highlighting
-zsh-users/zsh-history-substring-search
-bhilburn/powerlevel9k

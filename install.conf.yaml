@@ -17,8 +17,6 @@
     ~/.zshrc: zshrc
     ~/.zsh_aliases: zsh_aliases
     ~/.zsh_exports: zsh_exports
-    ~/.zsh_jupyter: zsh_jupyter
-    ~/.zsh_plugins.txt: zsh_plugins.txt
     ~/.gnupg/gpg.conf: gnupg/gpg.conf
     ~/.config/alacritty/alacritty.yml: config/alacritty/alacritty.yml
     ~/.config/Code/User/settings.json: config/Code/User/settings.json
