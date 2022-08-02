@@ -16,4 +16,4 @@ Dotfiles uses [Dotbot][dotbot] for installation.
  * Install xcode command-line tools: `xcode-select --install`
  * Install Homebrew: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
  * Install Homebrew casks
- * iTerm2 > Preferences > Profiles > Text and select font "MesloLGS NF"
+ * run `p10k configure` within a iTerm2 window to allow Powerlevel10k to set the iTerm2 font to `MesloLGS NF`
