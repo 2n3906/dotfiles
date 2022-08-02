@@ -11,7 +11,8 @@ Dotfiles uses [Dotbot][dotbot] for installation.
 
 ## Mac installation
 
- * Go to Settings > Keyboard > Modifier Keys and set Caps Lock to Command
+ * `git clone git@github.com:2n3906/dotfiles.git .dotfiles`
+ * Go to Settings > Keyboard > Modifier Keys.  Set Caps Lock to Command, set keyboard repeat rate to max and delay to min.
  * Install xcode command-line tools: `xcode-select --install`
  * Install Homebrew: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
  * Install Homebrew casks

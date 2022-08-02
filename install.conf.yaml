@@ -17,6 +17,7 @@
     ~/.zshrc: zshrc
     ~/.zsh_aliases: zsh_aliases
     ~/.zsh_exports: zsh_exports
+    ~/.zprofile: zprofile
     ~/.p10k.zsh: p10k.zsh
     ~/.gnupg/gpg.conf: gnupg/gpg.conf
     ~/.config/alacritty/alacritty.yml: config/alacritty/alacritty.yml
