@@ -77,3 +77,8 @@
 "Exif.Photo.ISOSpeedRatings" = 800
 "Xmp.AnalogExif.FilmMaker" = "CineStill"
 "Xmp.iptcExt.DigitalSourceType" = "http://cv.iptc.org/newscodes/digitalsourcetype/negativeFilm"
+
+["Ilford SFX 200"]
+"Exif.Photo.ISOSpeedRatings" = 200
+"Xmp.AnalogExif.FilmMaker" = "Ilford"
+"Xmp.iptcExt.DigitalSourceType" = "http://cv.iptc.org/newscodes/digitalsourcetype/negativeFilm"
