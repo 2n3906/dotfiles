@@ -1,19 +1,19 @@
 ["Leica M6"]
 "Exif.Image.Make" = "Leica"
-"Exif.Image.Model" = "M6"
+"Exif.Image.Model" = "Leica M6"
 
 ["Mamiya RB67"]
 "Exif.Image.Make" = "Mamiya"
-"Exif.Image.Model" = "RB67"
+"Exif.Image.Model" = "Mamiya RB67"
 
 ["Nikon F100"]
 "Exif.Image.Make" = "Nikon"
-"Exif.Image.Model" = "F100"
+"Exif.Image.Model" = "Nikon F100"
 
 ["Widelux"]
 "Exif.Image.Make" = "Widelux"
-"Exif.Image.Model" = "F7"
+"Exif.Image.Model" = "Widelux F7"
 
-["Weirdocam"]
-"Exif.Image.Make" = "Weirdocam"
-"Exif.Image.Model" = "T1"
+["Nikonos V"]
+"Exif.Image.Make" = "Nikon"
+"Exif.Image.Model" = "Nikon Nikonos V"
