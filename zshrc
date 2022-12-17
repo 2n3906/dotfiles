@@ -6,7 +6,11 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
 fi
 
 if [[ -r /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme ]]; then
+  # Default location for Mac homebrew package
   source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
+elif [[ -r ~/powerlevel10k/powerlevel10k.zsh-theme ]]; then
+  # Default location for manual Linux git install
+  source ~/powerlevel10k/powerlevel10k.zsh-theme
 fi
 
 setopt noclobber
