@@ -1,0 +1,15 @@
+# Installing stuff
+
+`sudo apt install 1password sway zsh`
+
+Manual font installation for powerlevel10k Meslo fonts.
+
+# Getting Sway to work on Ubuntu 20.04
+
+Edit /etc/gdm3/custom.conf and comment out the WaylandEnable=false line.
+WaylandEnable=false prevents sway from being listed as a login shell.
+
+```
+# Uncoment the line below to force the login screen to use Xorg
+#WaylandEnable=false
+```

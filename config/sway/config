@@ -7,7 +7,7 @@
 
 input "type:keyboard" xkb_options ctrl:nocaps
 
-output eDP-1 scale 2
+output eDP-1 scale 1.5
 
 # i3 config file (v4)
 #
