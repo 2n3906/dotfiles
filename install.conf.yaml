@@ -5,6 +5,9 @@
 
 - clean: ['~']
 
+- create:
+    - ~/.1password
+
 - link:
     ~/.editorconfig: editorconfig
     ~/.gitconfig: gitconfig
@@ -32,16 +35,16 @@
     ~/.config/kitty/kitty.conf: config/kitty/kitty.conf
     ~/.config/redshift/redshift.conf: config/redshift/redshift.conf
     ~/.config/sway/config: config/sway/config
-
-- link:
     ~/.gnupg/gpg-agent.conf:
       if: '[ `uname` = Linux ]'
       path: gnupg/gpg-agent.conf.linux
-
-- link:
     ~/.gnupg/gpg-agent.conf:
       if: '[ `uname` = Darwin ]'
       path: gnupg/gpg-agent.conf.mac
+    ~/.1password/agent.sock:
+      if: '[ `uname` = Darwin ]'
+      path: "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+
 
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
