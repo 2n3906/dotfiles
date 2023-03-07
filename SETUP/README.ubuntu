@@ -13,3 +13,8 @@ WaylandEnable=false prevents sway from being listed as a login shell.
 # Uncoment the line below to force the login screen to use Xorg
 #WaylandEnable=false
 ```
+
+apt-install wofi for the launcher on Sway/Wayland
+apt-install light for backlight control on Sway
+... light won't work until reboot because it installs udev rules for 90-backlight
+... add yourself to video group: `sudo usermod -aG video $USER`
