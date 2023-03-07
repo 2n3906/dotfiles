@@ -18,3 +18,19 @@ apt-install wofi for the launcher on Sway/Wayland
 apt-install light for backlight control on Sway
 ... light won't work until reboot because it installs udev rules for 90-backlight
 ... add yourself to video group: `sudo usermod -aG video $USER`
+
+## TODO ##
+
+Open or Toggle 1Password 	1password --toggle 	Ctrl + p
+Lock 1Password 	1password --lock 	Ctrl + Shift + L
+Open Quick Access 	1password --quick-access 	Ctrl + Shift + Space
+
+Add these:
+
+bindsym Ctrl+Shift+l 1password --lock
+byndsym Ctrl+Shift+space exec 1password --quick-access
+
+and consider adding
+
+exec eval $(gnome-keyring-daemon --start)
+exec export SSH_AUTH_SOCK
