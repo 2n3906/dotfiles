@@ -240,4 +240,13 @@ bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 bindsym --locked XF86MonBrightnessUp exec light -A 10
 bindsym --locked XF86MonBrightnessDown exec light -U 10
 
+bindsym Ctrl+Shift+space exec 1password --quick-access
+
 include /etc/sway/config.d/*
+
+for_window [class="1Password"] floating enable
+
+# exec eval $(gnome-keyring-daemon --start)
+# exec /usr/libexec/polkit-gnome-authentication-agent-1
+# exec 1password --enable-features=UseOzonePlatform --enable-features=WaylandWindowDecorations --ozone-platform-hint=auto --silent
+exec 1password --silent
