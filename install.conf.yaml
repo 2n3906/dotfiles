@@ -36,6 +36,7 @@
     ~/.config/sway/config: config/sway/config
     ~/.config/waybar/config: config/waybar/config
     ~/.config/waybar/style.css: config/waybar/style.css
+    ~/.config/helix/config.toml: config/helix/config.toml
     ~/.gnupg/gpg-agent.conf:
       if: '[ `uname` = Linux ]'
       path: gnupg/gpg-agent.conf.linux
