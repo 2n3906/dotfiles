@@ -4,5 +4,7 @@
     "editor.fontLigatures": true,
     "python.formatting.provider": "yapf",
     "autoDocstring.docstringFormat": "sphinx",
-    "extensions.ignoreRecommendations": false
+    "extensions.ignoreRecommendations": false,
+    "telemetry.telemetryLevel": "off",
+    "update.showReleaseNotes": false
 }

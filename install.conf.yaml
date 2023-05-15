@@ -24,7 +24,6 @@
     ~/.p10k.zsh: p10k.zsh
     ~/.gnupg/gpg.conf: gnupg/gpg.conf
     ~/.config/alacritty/alacritty.yml: config/alacritty/alacritty.yml
-    ~/.config/Code/User/settings.json: config/Code/User/settings.json
     ~/.jupyter/jupyter_notebook_config.py: jupyter/jupyter_notebook_config.py
     ~/.config/matplotlib/matplotlibrc: config/matplotlib/matplotlibrc
     ~/.config/matplotlib/stylelib/scottoplot.mplstyle: config/matplotlib/stylelib/scottoplot.mplstyle
@@ -37,6 +36,12 @@
     ~/.config/waybar/config: config/waybar/config
     ~/.config/waybar/style.css: config/waybar/style.css
     ~/.config/helix/config.toml: config/helix/config.toml
+    ~/.config/Code/User/settings.json:
+      if: '[ `uname` = Linux ]'
+      path: config/Code/User/settings.json
+    ~/Library/Application Support/Code/User/settings.json:
+      if: '[ `uname` = Darwin ]'
+      path: config/Code/User/settings.json
     ~/.gnupg/gpg-agent.conf:
       if: '[ `uname` = Linux ]'
       path: gnupg/gpg-agent.conf.linux
