@@ -87,3 +87,8 @@
 "Exif.Photo.ISOSpeedRatings" = 200
 "Xmp.AnalogExif.FilmMaker" = "Ilford"
 "Xmp.iptcExt.DigitalSourceType" = "http://cv.iptc.org/newscodes/digitalsourcetype/negativeFilm"
+
+["JCH StreetPan"]
+"Exif.Photo.ISOSpeedRatings" = 400
+"Xmp.AnalogExif.FilmMaker" = "Japan Camera Hunter"
+"Xmp.iptcExt.DigitalSourceType" = "http://cv.iptc.org/newscodes/digitalsourcetype/negativeFilm"
