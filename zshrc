@@ -15,8 +15,11 @@ then
 fi
 
 if [[ -r /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme ]]; then
-  # Default location for Mac homebrew package
+  # Previous default location for Mac homebrew package
   source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
+elif [[ -r /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme ]]; then
+  # New default location for Mac homebrew package (circa Sept 2023)
+  source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
 elif [[ -r ~/powerlevel10k/powerlevel10k.zsh-theme ]]; then
   # Default location for manual Linux git install
   source ~/powerlevel10k/powerlevel10k.zsh-theme
