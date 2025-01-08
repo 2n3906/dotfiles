@@ -14,3 +14,7 @@ mkdir ~/Desktop/Screenshots
 defaults write com.apple.screencapture "location" -string "~/Desktop/Screenshots"
 defaults write com.apple.screencapture "show-thumbnail" -bool false
 killall SystemUIServer
+
+# DISABLE HANDOFF
+defaults -currentHost write com.apple.coreservices.useractivityd ActivityAdvertisingAllowed -bool no
+defaults -currentHost write com.apple.coreservices.useractivityd ActivityReceivingAllowed -bool no
