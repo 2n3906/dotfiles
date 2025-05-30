@@ -9,6 +9,12 @@ defaults write com.googlecode.iterm2 "Secure Input" 1
 # SCROLLING CORRECTLY
 defaults write -g com.apple.swipescrolldirection -bool false
 
+# MAKE SCROLLBARS VISIBLE AT ALL
+defaults write -g AppleShowScrollBars -string “Always”
+
+# MAKE FINDER MORE USEFUL
+defaults write com.apple.finder ShowPathbar -bool true
+
 # SCREENSHOTS
 mkdir ~/Desktop/Screenshots
 defaults write com.apple.screencapture "location" -string "~/Desktop/Screenshots"
@@ -18,3 +24,6 @@ killall SystemUIServer
 # DISABLE HANDOFF
 defaults -currentHost write com.apple.coreservices.useractivityd ActivityAdvertisingAllowed -bool no
 defaults -currentHost write com.apple.coreservices.useractivityd ActivityReceivingAllowed -bool no
+
+# pretty good list of other settings here:
+# https://github.com/kevinmcox/outset-scripts/blob/main/usr/local/outset/login-once/FinderSettings.sh
