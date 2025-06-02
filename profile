@@ -26,11 +26,17 @@ if [ -d "$HOME/.local/bin" ] ; then
     PATH="$HOME/.local/bin:$PATH"
 fi
 
-# Hi-DPI display settings
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.cargo/bin" ] ; then
+    PATH="$HOME/.cargo/bin:$PATH"
+fi
+
+# set PATH so it includes user's private bin if it exists
+if [ -d "$HOME/.poetry/bin" ] ; then
+    PATH="$HOME/.poetry/bin:$PATH"
+fi
+
+# Linux-specific Hi-DPI display settings.
 export GDK_DPI_SCALE=1.5       # Firefox
 export QT_SCALE_FACTOR=1.5     # QT apps
 export WINIT_HIDPI_FACTOR=1.5  # Alacritty
-
-export PATH="$HOME/.cargo/bin:$PATH"
-
-export PATH="$HOME/.poetry/bin:$PATH"
