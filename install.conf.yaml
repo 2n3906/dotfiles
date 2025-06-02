@@ -36,6 +36,7 @@
     ~/.config/waybar/config: config/waybar/config
     ~/.config/waybar/style.css: config/waybar/style.css
     ~/.config/helix/config.toml: config/helix/config.toml
+    ~/.config/starship.toml: config/starship.toml
     ~/.config/Code/User/settings.json:
       if: '[ `uname` = Linux ]'
       path: config/Code/User/settings.json
