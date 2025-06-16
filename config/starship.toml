@@ -9,6 +9,7 @@ format = """\
 [](fg:#7DF9AA bg:#3B76F0)\
 $directory\
 [](fg:#3B76F0 bg:#FCF392)\
+$python\
 $git_branch\
 $git_status\
 $git_metrics\
@@ -46,3 +47,9 @@ style = "fg:bright-white bg:18"
 [character]
 success_symbol = '[ ➜](bold green) '
 error_symbol = '[ ✗](#E84D44) '
+
+[python]
+symbol = " "
+detect_extensions = []
+format = "[ $symbol$virtualenv ]($style)"
+style = "fg:#1C3A5E bg:#FCF392"
