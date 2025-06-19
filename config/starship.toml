@@ -4,7 +4,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = """\
-[](bg:#030B16 fg:#7DF9AA)\
+[](bg:none fg:#7DF9AA)\
 $os\
 [](fg:#7DF9AA bg:#3B76F0)\
 $directory\
@@ -13,7 +13,7 @@ $python\
 $git_branch\
 $git_status\
 $git_metrics\
-[](fg:#FCF392 bg:#030B16)\
+[](fg:#FCF392 bg:none)\
 $character\
 """
 
