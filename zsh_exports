@@ -1,6 +1,6 @@
 export PAGER=less
-export EDITOR=vim
-export VISUAL=vim
+export EDITOR=nvim
+export VISUAL=nvim
 export VEDITOR=code
 
 # Theme: dircolors.256dark

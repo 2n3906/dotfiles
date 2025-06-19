@@ -5,7 +5,7 @@
 
 format = """\
 [](bg:#030B16 fg:#7DF9AA)\
-[󰀵 ](bg:#7DF9AA fg:#090c0c)\
+$os\
 [](fg:#7DF9AA bg:#3B76F0)\
 $directory\
 [](fg:#3B76F0 bg:#FCF392)\
@@ -18,7 +18,7 @@ $character\
 """
 
 [directory]
-format = "[ ﱮ $path ]($style)"
+format = "[ 󰝰 $path ]($style)"
 style = "fg:#E4E4E4 bg:#3B76F0"
 
 [git_branch]
@@ -41,7 +41,7 @@ format = "[ $symbol$branch ]($style)"
 symbol = " "
 
 [cmd_duration]
-format = "[  $duration ]($style)"
+format = "[ 󰥔 $duration ]($style)"
 style = "fg:bright-white bg:18"
 
 [character]
@@ -53,3 +53,8 @@ symbol = " "
 detect_extensions = []
 format = "[ $symbol$virtualenv ]($style)"
 style = "fg:#1C3A5E bg:#FCF392"
+
+[os]
+format = "[$symbol]($style)"
+style = "bg:#7DF9AA fg:#090c0c"
+disabled = false
