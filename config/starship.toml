@@ -58,3 +58,8 @@ style = "fg:#1C3A5E bg:#FCF392"
 format = "[$symbol]($style)"
 style = "bg:#7DF9AA fg:#090c0c"
 disabled = false
+
+[os.symbols]
+Fedora = "󰣛 "
+Macos = "󰀵 "
+Ubuntu = "󰕈 "

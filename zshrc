@@ -1,29 +1,20 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-#if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-#  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-#fi
-
 # Add homebrew autocompletions (Mac only)
 if type brew &>/dev/null
 then
   FPATH="$(brew --prefix)/share/zsh/site-functions:${FPATH}"
-
-  autoload -Uz compinit
-  compinit
 fi
 
-#if [[ -r /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme ]]; then
-#  # Previous default location for Mac homebrew package
-#  source /opt/homebrew/opt/powerlevel10k/powerlevel10k.zsh-theme
-#elif [[ -r /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme ]]; then
-#  # New default location for Mac homebrew package (circa Sept 2023)
-#  source /opt/homebrew/share/powerlevel10k/powerlevel10k.zsh-theme
-#elif [[ -r ~/powerlevel10k/powerlevel10k.zsh-theme ]]; then
-#  # Default location for manual Linux git install
-#  source ~/powerlevel10k/powerlevel10k.zsh-theme
-#fi
+# Should be called before compinit
+zmodload zsh/complist
+
+# Enable autocompletions
+autoload -U compinit; compinit
+_comp_options+=(globdots) # With hidden files
+
+# setopt GLOB_COMPLETE      # Show autocompletion menu with globs
+setopt MENU_COMPLETE        # Automatically highlight first element of completion menu
+setopt AUTO_LIST            # Automatically list choices on ambiguous completion.
+setopt COMPLETE_IN_WORD     # Complete from both ends of a word.
 
 setopt noclobber
 
@@ -48,6 +39,5 @@ fi
 source $HOME/.zsh_exports
 source $HOME/.zsh_aliases
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-#[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+# Starship prompt!
 eval "$(starship init zsh)"
