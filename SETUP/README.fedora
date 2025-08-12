@@ -8,5 +8,11 @@ sudo dnf config-manager setopt fedora-cisco-openh264.enabled=1
 # see https://rpmfusion.org/Howto/Multimedia
 sudo dnf install intel-media-driver
 
+# Install additional codec
+sudo dnf update @multimedia --setopt="install_weak_deps=False" --exclude=PackageKit-gstreamer-plugin
+
+# Swap FFmpeg packages
+sudo dnf swap -y ffmpeg-free ffmpeg --allowerasing
+
 # Install vainfo utility
 sudo dnf install libva-utils
