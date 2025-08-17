@@ -16,3 +16,12 @@ sudo dnf swap -y ffmpeg-free ffmpeg --allowerasing
 
 # Install vainfo utility
 sudo dnf install libva-utils
+
+# Add yourself to the dialout group for serial port access
+sudo usermod -a -G dialout $USER
+
+# Capslock as control key
+gsettings set org.gnome.desktop.input-sources xkb-options "['caps:ctrl_modifier']"
+
+# Install a nice text editor
+sudo dnf install helix
