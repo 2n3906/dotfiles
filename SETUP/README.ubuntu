@@ -34,3 +34,15 @@ and consider adding
 
 exec eval $(gnome-keyring-daemon --start)
 exec export SSH_AUTH_SOCK
+
+
+## If you are SSHin'g in from Ghostty, it may be necessary to configure terminfo for xterm-ghostty
+# Do this by forwarding it over ssh:
+# infocmp -x | ssh YOUR-SERVER -- tic -x -
+
+
+# Keyboard repeat rate
+```
+gsettings set org.gnome.desktop.peripherals.keyboard delay 250
+gsettings set org.gnome.desktop.peripherals.keyboard repeat-interval 30
+```
