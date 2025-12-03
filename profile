@@ -37,6 +37,6 @@ if [ -d "$HOME/.poetry/bin" ] ; then
 fi
 
 # Linux-specific Hi-DPI display settings.
-export GDK_DPI_SCALE=1.5       # Firefox
+# this is obsolete I hope - 2025-12-03 -- export GDK_DPI_SCALE=1.5       # Firefox
 export QT_SCALE_FACTOR=1.5     # QT apps
 export WINIT_HIDPI_FACTOR=1.5  # Alacritty

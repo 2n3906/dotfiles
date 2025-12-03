@@ -6,6 +6,9 @@ user_pref("print.print_footercenter", "");
 user_pref("print.print_footerleft", "");
 user_pref("print.print_footerright", "");
 
+// Fix fractional scaling on Linux + Wayland
+user_pref("widget.wayland.fractional-scale.enabled", true)
+
 // These settings are cherry-picked from https://github.com/pyllyukko/user.js/
 
 // PREF: Disable web notifications
