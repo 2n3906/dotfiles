@@ -1,4 +1,15 @@
-Resources for configuring new machines
+# First-time setup notes
+For configuring new machines.
+
+## Mac
+
+1. Run `./bootstrap-mac.sh` to install homebrew and configure some sensible defaults.
+2. (Optional: reboot for settings to become active.)
+3. Run `brew bundle` in the directory with `Brewfile` to install basic software.
+4. Transfer ssh keypair to new machine.
+5. Clone dotfiles and install them.
+
+## Other Resources
 
 Mac:
 https://github.com/dstroot/.osx/tree/master/defaults
