@@ -1,8 +1,11 @@
 #! /bin/sh 
 
-# -------------
+# --------------
 # Inspiration:
 # - https://github.com/kevinmcox/outset-scripts/blob/main/usr/local/outset/login-once/FinderSettings.sh
+#
+# Manual steps that are hard to automate:
+# - System Settings > Customize modifier keys: Caps Lock key = Command
 # --------------
 
 # XCODE COMMAND LINE TOOLS
@@ -44,6 +47,10 @@ defaults write com.googlecode.iterm2 "Secure Input" 1
 # SCROLLING CORRECTLY
 echo "Setting scroll direction..."
 defaults write -g com.apple.swipescrolldirection -bool false
+
+# TOUCH TO CLICK
+echo "Setting trackpad touch to click..."
+defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 
 # MAKE SCROLLBARS VISIBLE AT ALL
 echo "Making scrollbars visible..."
