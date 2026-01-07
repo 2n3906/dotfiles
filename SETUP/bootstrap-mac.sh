@@ -62,6 +62,15 @@ defaults write -g AppleShowScrollBars -string “Always”
 echo "Setting finder preferences..."
 defaults write com.apple.finder ShowPathbar -bool true
 
+# SET UP DOCK
+echo "Configuring dock..."
+defaults write com.apple.dock show-recents -bool false
+defaults write com.apple.dock autohide -bool true
+
+# SET UP DESKTOP
+echo "Configuring desktop..."
+defaults write com.apple.WindowManager StandardHideWidgets -bool true
+
 # SCREENSHOTS
 echo "Setting screenshots directory..."
 mkdir -p ~/Desktop/Screenshots
