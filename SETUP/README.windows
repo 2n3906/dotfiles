@@ -1,4 +1,0 @@
-# Open PowerShell as Administrator and run
-& ([scriptblock]::Create((irm "https://debloat.raphi.re/")))
-
-# Source: https://github.com/Raphire/Win11Debloat

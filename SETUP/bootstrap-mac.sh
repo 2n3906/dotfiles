@@ -3,6 +3,8 @@
 # --------------
 # Inspiration:
 # - https://github.com/kevinmcox/outset-scripts/blob/main/usr/local/outset/login-once/FinderSettings.sh
+# - https://github.com/hamchapman/.dotfiles/blob/master/macos.sh
+# - https://github.com/mathiasbynens/dotfiles/blob/main/.macos
 #
 # Manual steps that are hard to automate:
 # - System Settings > Customize modifier keys: Caps Lock key = Command

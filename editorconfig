@@ -19,6 +19,7 @@ indent_size = 2
 [*.py]
 indent_style = space
 indent_size = 4
+max_line_length = 88   # Black's default line length
 
 # Vim
 # https://google.github.io/styleguide/vimscriptguide.xml

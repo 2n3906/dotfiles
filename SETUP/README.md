@@ -9,6 +9,16 @@ For configuring new machines.
 4. Transfer ssh keypair to new machine.
 5. Clone dotfiles and install them.
 
+## Windows 11
+
+Open PowerShell as Administrator and run
+
+```
+& ([scriptblock]::Create((irm "https://debloat.raphi.re/")))
+```
+
+See https://github.com/Raphire/Win11Debloat for more details.
+
 ## Other Resources
 
 Mac:
