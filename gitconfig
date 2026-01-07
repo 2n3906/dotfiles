@@ -1,3 +1,16 @@
 [user]
 	name = Scott Johnston
 	email = sjohnston@alum.mit.edu
+[init]
+	defaultBranch = main
+[push]
+	autoSetupRemote = true
+	default = simple
+[color]
+	ui = auto
+[diff]
+	algorithm = histogram
+[core]
+	compression = 9
+	preloadindex = true
+	whitespace = trailing-space
