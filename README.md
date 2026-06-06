@@ -11,9 +11,9 @@ Dotfiles uses [Dotbot][dotbot] for installation.
 
 ## Mac installation
 
- * `git clone git@github.com:2n3906/dotfiles.git ~/.dotfiles`
+ * Open Terminal, run `git clone https://github.com/2n3906/dotfiles.git ~/.dotfiles`
+ * Run `~/.dotfiles/SETUP/bootstrap-mac.sh` to install homebrew and configure basic defaults. Log out and log in again.
  * Go to Settings > Keyboard > Modifier Keys.  Set Caps Lock to Command, set keyboard repeat rate to max and delay to min.
- * Install xcode command-line tools: `xcode-select --install`
- * Install Homebrew: `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
- * Install Homebrew casks (run `brew bundle` in the same directory as the `Brewfile`)
- * run `p10k configure` within a iTerm2 window to allow Powerlevel10k to set the iTerm2 font to `MesloLGS NF`
+ * Run `brew bundle` in the same directory as before to install apps.
+ * Open 1Password and enable the SSH agent in the settings.
+ * Run `./install` inside the `.dotfiles` directory to install dotfiles.
