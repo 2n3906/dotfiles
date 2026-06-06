@@ -1,14 +1,17 @@
-#! /bin/sh 
+#! /bin/sh
 
 # --------------
 # Inspiration:
 # - https://github.com/kevinmcox/outset-scripts/blob/main/usr/local/outset/login-once/FinderSettings.sh
 # - https://github.com/hamchapman/.dotfiles/blob/master/macos.sh
 # - https://github.com/mathiasbynens/dotfiles/blob/main/.macos
+# - https://github.com/dirtymouse/defaultswrite
 #
 # Manual steps that are hard to automate:
 # - System Settings > Customize modifier keys: Caps Lock key = Command
 # --------------
+
+echo "Setting up your new Mac!"
 
 # XCODE COMMAND LINE TOOLS
 if xcode-select -p &>/dev/null; then
@@ -56,11 +59,15 @@ defaults write com.apple.AppleMultitouchTrackpad Clicking -bool true
 
 # MAKE SCROLLBARS VISIBLE AT ALL
 echo "Making scrollbars visible..."
-defaults write -g AppleShowScrollBars -string “Always”
+defaults write -g AppleShowScrollBars -string "Always"
 
 # MAKE FINDER MORE USEFUL
 echo "Setting finder preferences..."
 defaults write com.apple.finder ShowPathbar -bool true
+defaults write NSGlobalDomain AppleShowAllExtensions -bool true # show file extensions
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
+defaults write com.apple.desktopservices DSDontWriteUSBStores -bool true
+defaults write com.apple.NetworkBrowser BrowseAllInterfaces -bool true # enable AirDrop over Ethernet
 
 # SET UP DOCK
 echo "Configuring dock..."
@@ -73,8 +80,8 @@ defaults write com.apple.WindowManager StandardHideWidgets -bool true
 
 # SCREENSHOTS
 echo "Setting screenshots directory..."
-mkdir -p ~/Desktop/Screenshots
-defaults write com.apple.screencapture "location" -string "~/Desktop/Screenshots"
+mkdir -p ~/Pictures/Screenshots
+defaults write com.apple.screencapture "location" -string "${HOME}/Pictures/Screenshots"
 defaults write com.apple.screencapture "show-thumbnail" -bool false
 killall SystemUIServer   # restart UI
 
@@ -82,3 +89,7 @@ killall SystemUIServer   # restart UI
 echo "Disabling Handoff..."
 defaults -currentHost write com.apple.coreservices.useractivityd ActivityAdvertisingAllowed -bool no
 defaults -currentHost write com.apple.coreservices.useractivityd ActivityReceivingAllowed -bool no
+
+# DISABLE MAC ONBOARDING TIPS
+echo "Disabling tips (may require you to type root password for sudo)..."
+sudo launchctl disable gui/${UID}/com.apple.tipsd
