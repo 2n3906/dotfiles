@@ -29,6 +29,7 @@ cask "font-fira-code-nerd-font"
 cask "ghostty"
 cask "hazel"
 cask "nikitabobko/tap/aerospace"
+cask "syncthing-app"
 mas "1Password for Safari", id: 1569813296
 mas "Gifski", id: 1351639930
 mas "iA Writer", id: 775737590
