@@ -1,10 +1,63 @@
 {
-    "window.zoomLevel": 1.25,
+    // ─────────────────────────────────────────────
+    // Editor
+    // ─────────────────────────────────────────────
+
     "editor.fontFamily": "FiraCode Nerd Font",
     "editor.fontLigatures": true,
-    "python.formatting.provider": "yapf",
+    "editor.fontSize": 14,
+
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+
+    "editor.insertSpaces": true,
+    "editor.tabSize": 4,
+
+    "editor.renderWhitespace": "selection",
+    "editor.rulers": [88],
+
+    "editor.minimap.enabled": false,
+    "editor.stickyScroll.enabled": true,
+
+    // ─────────────────────────────────────────────
+    // Files
+    // ─────────────────────────────────────────────
+
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+
+    "files.autoSave": "afterDelay",
+
+    // ─────────────────────────────────────────────
+    // Python
+    // ─────────────────────────────────────────────
+
+    "[python]": {
+        "editor.defaultFormatter": "charliermarsh.ruff",
+        "editor.formatOnSave": true,
+        "editor.codeActionsOnSave": {
+            "source.organizeImports.ruff": "explicit",
+            "source.fixAll.ruff": "explicit"
+        }
+    },
+
+    "python.analysis.typeCheckingMode": "standard",
+    "python.analysis.autoImportCompletions": true,
+    "python.analysis.inlayHints.functionReturnTypes": true,
+    "python.analysis.inlayHints.variableTypes": true,
+
+    // ─────────────────────────────────────────────
+    // Documentation
+    // ─────────────────────────────────────────────
+
     "autoDocstring.docstringFormat": "sphinx",
+
+    // ─────────────────────────────────────────────
+    // Extensions / privacy
+    // ─────────────────────────────────────────────
+
     "extensions.ignoreRecommendations": false,
+
     "telemetry.telemetryLevel": "off",
     "update.showReleaseNotes": false
 }
