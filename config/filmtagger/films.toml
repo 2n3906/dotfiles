@@ -92,3 +92,23 @@
 "Exif.Photo.ISOSpeedRatings" = 400
 "Xmp.AnalogExif.FilmMaker" = "Japan Camera Hunter"
 "Xmp.iptcExt.DigitalSourceType" = "http://cv.iptc.org/newscodes/digitalsourcetype/negativeFilm"
+
+["Fujicolor NPC 160"]
+"Exif.Photo.ISOSpeedRatings" = 160
+"Xmp.AnalogExif.FilmMaker" = "Fuji"
+"Xmp.iptcExt.DigitalSourceType" = "http://cv.iptc.org/newscodes/digitalsourcetype/negativeFilm"
+
+["Fujicolor NPH 400"]
+"Exif.Photo.ISOSpeedRatings" = 400
+"Xmp.AnalogExif.FilmMaker" = "Fuji"
+"Xmp.iptcExt.DigitalSourceType" = "http://cv.iptc.org/newscodes/digitalsourcetype/negativeFilm"
+
+["Fujicolor NPZ 800"]
+"Exif.Photo.ISOSpeedRatings" = 800
+"Xmp.AnalogExif.FilmMaker" = "Fuji"
+"Xmp.iptcExt.DigitalSourceType" = "http://cv.iptc.org/newscodes/digitalsourcetype/negativeFilm"
+
+["Fuji Velvia 50"]
+"Exif.Photo.ISOSpeedRatings" = 50
+"Xmp.AnalogExif.FilmMaker" = "Fuji"
+"Xmp.iptcExt.DigitalSourceType" = "http://cv.iptc.org/newscodes/digitalsourcetype/positiveFilm"

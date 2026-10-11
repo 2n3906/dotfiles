@@ -6,6 +6,10 @@
 "Exif.Image.Make" = "Mamiya"
 "Exif.Image.Model" = "Mamiya RB67"
 
+["Nikon N80"]
+"Exif.Image.Make" = "Nikon"
+"Exif.Image.Model" = "Nikon N80"
+
 ["Nikon F100"]
 "Exif.Image.Make" = "Nikon"
 "Exif.Image.Model" = "Nikon F100"
@@ -17,3 +21,7 @@
 ["Nikonos V"]
 "Exif.Image.Make" = "Nikon"
 "Exif.Image.Model" = "Nikon Nikonos V"
+
+["Crown Graphic 4x5"]
+"Exif.Image.Make" = "Graflex"
+"Exif.Image.Model" = "Graflex Crown Graphic 4x5"
