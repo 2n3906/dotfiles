@@ -1,24 +1,25 @@
-if [ -f "/opt/homebrew/bin/brew" ]; then
-  # Homebrew on a M1 Mac
-  eval "$(/opt/homebrew/bin/brew shellenv)"
-fi
+# ~/.zprofile: read once per login shell. Keep it fast and light — anything
+# expensive belongs in ~/.zshrc, which only runs for interactive shells.
 
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/bin" ] ; then
-    PATH="$HOME/bin:$PATH"
-fi
+# Homebrew on macOS: Apple Silicon (/opt/homebrew) or Intel (/usr/local).
+for _brew in /opt/homebrew/bin/brew /usr/local/bin/brew; do
+  if [[ -x $_brew ]]; then
+    eval "$($_brew shellenv)"
+    break
+  fi
+done
+unset _brew
 
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/.local/bin" ] ; then
-    PATH="$HOME/.local/bin:$PATH"
-fi
-
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/.cargo/bin" ] ; then
-    PATH="$HOME/.cargo/bin:$PATH"
-fi
-
-# set PATH so it includes user's private bin if it exists
-if [ -d "$HOME/.poetry/bin" ] ; then
-    PATH="$HOME/.poetry/bin:$PATH"
-fi
+# Prepend user-local bin directories to PATH if they exist.
+# In zsh, `path` is the array form of PATH and stays in sync with it;
+# `typeset -U` keeps it free of duplicates if this file is sourced twice.
+typeset -U path
+for _dir in \
+  $HOME/bin \
+  $HOME/.local/bin \
+  $HOME/.cargo/bin \
+  $HOME/.poetry/bin
+do
+  [[ -d $_dir ]] && path=($_dir $path)
+done
+unset _dir
